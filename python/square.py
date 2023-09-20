@@ -3,17 +3,21 @@
 
 class Square:
     def __init__(self):
+        # 사용자로부터 도형 선택
         square = int(input('넓이를 구하고 싶은 사각형의 숫자를 써주세요.\n 1.직사각형 2.평행사변형 3.사다리꼴 \n >>>'))
 
         if square == 1:
-            print('직사각형 함수는 rect()입니다.')
+            result = a.rect()
+            print(result)
 
         elif square == 2:
-            print('평행사변형 함수는 par()입니다.')
-        
+            result = a.par()
+            print(result)
+
         elif square == 3:
-            print('사다리꼴 함수는 trape()입니다.')
-        
+            result = a.trape()
+            print(result)
+
         else:
             print('1, 2, 3 중에서 다시 입력해주세요')
 
@@ -25,12 +29,17 @@ class Square:
 
     def par(self):
         base, height = map(int, input('밑변, 높이를 입력하세요. 예시 : 밑변,높이\n >>>').split(','))
-        result = base * height
+        area = base * height
+        result = '평행사변형의 넓이는 : ' + str(area)
         return result
 
     def trape(self):
-        base, upper_side, height = map(int, input('밑변, 높이를 입력하세요. 예시 : 밑변,높이\n >>>').split(','))
-        result = (base + upper_side) * height * 1/2
+        base, upper_side, height = map(int, input('밑변, 윗변, 높이를 입력하세요. 예시 : 밑변,윗변,높이\n >>>').split(','))
+        area = (base + upper_side) * height * 1/2
+        result = '사다리꼴의 넓이는 : ' + str(area)
         return result
 
+# 객체 생성
 a = Square()
+
+
