@@ -1,5 +1,5 @@
-# aiffel_node
-> 
+# AIFFEL CORE Node
+> AIFFEL Core LMS Node submission only
 
 ### ONBOARD_CR6 - 4. Github 사용방법과 실습
 
