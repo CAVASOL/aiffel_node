@@ -1,4 +1,4 @@
-# AIFFEL CORE Node
-> AIFFEL Core LMS Node submission only
+# AIFFEL Node Projects
+> AIFFEL Core LMS Node Project submission only
 
 
