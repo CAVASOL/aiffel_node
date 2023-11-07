@@ -6,6 +6,10 @@
 
 ```
 Aiffel_Node
+    ├── cv_project
+    │      ├── cv.ipynb
+    │      └── README.md
+    │
     ├── dl_project
     │      ├── dl_master_project_boston.ipynb
     │      ├── dl_master_project_cifar10.ipynb
