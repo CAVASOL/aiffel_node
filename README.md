@@ -7,7 +7,8 @@
 ```
 Aiffel_Node
     ├── cv_project
-    │      ├── cv.ipynb
+    │      ├── img_classification.ipynb
+    │      ├── obj_detection.ipynb
     │      └── README.md
     │
     ├── dl_project
