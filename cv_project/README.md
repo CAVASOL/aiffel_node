@@ -55,8 +55,8 @@ module_handle = "https://tfhub.dev/google/openimages_v4/ssd/mobilenet_v2/1"
 detector = hub.load(module_handle).signatures['default'] # detector에 사용할 모듈 저장
 ```
 
->mobilenet_v2로 실험하였을 때, 앞서 inception_resnet_v2을 사용했을 때보다 시간이 매우 적게 소요되었습니다(Inference time:  1.4565761089324951). 효율적이라고 느꼈습니다. pre-trained 모듈을 조사하는 과정에서 궁금했던 부분은 특정 모듈을 import하는 과정에서 url에 google이 있는 모듈이 테스트가 가능했던 부분입니다. tfhub에서 "https://tfhub.dev/google"으로 검색을 하면 inception_resnet_v2와 mobilenet_v2만 조회되었습니다. 다른 모듈을 사용한 실험 결과가 궁금합니다.
+>mobilenet_v2로 실험하였을 때, 앞서 inception_resnet_v2을 사용했을 때보다 시간이 매우 적게 소요되었습니다(Inference time:  1.4565761089324951). 시간이 적게 소요되어 효율적이라고 느꼈습니다. 다만, pre-trained 모듈을 조사하는 과정에서 궁금했던 부분은 특정 모듈을 import하는 과정에서 url에 google이 있는 모듈만 정상적으로 적용/테스트가 가능했습니다. 심지어 tfhub에서 "https://tfhub.dev/google"으로 검색을 하면 inception_resnet_v2와 mobilenet_v2만 조회되었습니다. 다른 하나는 위키피디아에서 제가 임의로 가져온 이미지 내에서 inception_resnet_v2 모듈로 테스트하면 컴퓨터를 레이블로 찾았지만, ssd/mobilenet_v2/1는 컴퓨터를 인지하지 못했고 정확도가 다고 낮은 것으로 나타났습니다. 어떤 차이가 있는지에 관해서 다양한 이미지를 활용하여 실험해볼 필요가 있다고 생각합니다. 또한 다른 다양한 모듈을 사용한 실험 결과가 궁금합니다.
 
 ### Retrospect
 
->Object Detection task를 직접 테스트해볼 수 있었던 재미있는 프로젝트였습니다. 더 다양한 모듈을 사용하여 결과를 비교해보고 싶습니다.
+>Object Detection task를 직접 테스트해볼 수 있었던 재미있는 프로젝트였습니다. 바인딩 박스 관련 코드가 조금 이해하기 어려웠지만 전체적인 소감은 매우 유익한 퀘스트였습니다. 더 다양한 모듈을 사용하여 결과를 비교해보고 싶습니다.
