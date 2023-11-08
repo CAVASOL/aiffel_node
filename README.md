@@ -8,6 +8,7 @@
 Aiffel_Node
     ├── cv_project
     │      ├── img_classification.ipynb
+    │      ├── img_classification_recap.ipynb
     │      ├── obj_detection.ipynb
     │      └── README.md
     │

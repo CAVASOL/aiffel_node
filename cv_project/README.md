@@ -59,4 +59,4 @@ detector = hub.load(module_handle).signatures['default'] # detector에 사용할
 
 ### Retrospect
 
->Object Detection task를 직접 테스트해볼 수 있었던 재미있는 프로젝트였습니다. 바인딩 박스 관련 코드가 조금 이해하기 어려웠지만 전체적인 소감은 매우 유익한 퀘스트였습니다. 더 다양한 모듈을 사용하여 결과를 비교해보고 싶습니다.
+>Object Detection task를 직접 테스트해볼 수 있었던 재미있는 프로젝트였습니다. 바인딩 박스 관련 코드가 조금 이해하기 어려웠지만 전체적인 소감은 매우 유익한 퀘스트였습니다. 더 다양한 모듈을 사용하여 결과를 비교해보고 싶습니다. 프로젝트 제출 후, 이미지 분류 작업과 관련하여 성능 테스트를 다시 시도했습니다. 테스트 과정과 결과를 요약한 내용을 img_classification_recap.ipynb 으로 업데이트 했습니다.
